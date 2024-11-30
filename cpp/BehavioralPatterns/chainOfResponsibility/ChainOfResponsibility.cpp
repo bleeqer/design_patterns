@@ -25,7 +25,7 @@ class ConcreteHandler1 : public Handler {
 
     void handleRequest() override {
         if(!this->getSuccessor()) {
-            std::cout << "This is handled by Concret Handler 1" << std::endl;
+            std::cout << "This is handled by Concrete Handler 1" << std::endl;
         } else {
             this->getSuccessor()->handleRequest();
         }
@@ -38,7 +38,7 @@ class ConcreteHandler2 : public Handler {
 
     void handleRequest() override {
         if(!this->getSuccessor()) {
-            std::cout << "This is handled by Concret Handler 2" << std::endl;
+            std::cout << "This is handled by Concrete Handler 2" << std::endl;
         } else {
             this->getSuccessor()->handleRequest();
         }
